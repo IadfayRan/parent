@@ -12,9 +12,18 @@
     <java.version>1.8</java.version>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <!-- Spring -->
+    <spring-framework.version>4.3.7.RELEASE</spring-framework.version>
+    
   </properties>
 
   <dependencies>
+    <!-- Spring MVC -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>${spring-framework.version}</version>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -48,9 +57,9 @@
       </properties>
     </profile>
     <profile>
-      <id>Online</id>
+      <id>Test</id>
       <properties>
-        <mode>online</mode>
+        <mode>test</mode>
       </properties>
     </profile>
     <profile>
